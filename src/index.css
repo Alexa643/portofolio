@@ -1,0 +1,102 @@
+/* Importă fontul Google 'Roboto' pentru un aspect modern */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600;700&display=swap");
+
+/* Variabile CSS (Custom Properties) */
+:root {
+  /* Culori principale */
+  --primary-color: #007bff;
+  --accent-color: #28a745;
+  --secondary-color: #6c757d;
+
+  --background-page: #e6f0ff;
+  --background-light: #d6eaff;
+  --background-white: #fff;
+  --text-dark: #212529;
+  --text-light: #6c757d;
+
+  --shadow-subtle: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.65;
+  font-size: 16.5px;
+
+  background-color: var(--background-page);
+  color: var(--text-dark);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  min-height: 70vh;
+
+  background-color: var(--background-white);
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+  text-align: center;
+  margin: 40px auto 30px auto;
+  font-size: 2.2em;
+  font-weight: 700;
+  color: var(--primary-color);
+  position: relative;
+  padding-bottom: 10px;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: var(--accent-color);
+  margin: 8px auto 0 auto;
+  border-radius: 2px;
+}
+.main-footer {
+  padding: 40px 20px;
+  margin-top: 80px;
+
+  background-color: var(--background-light);
+  box-shadow: var(--shadow-subtle);
+
+  text-align: center;
+  font-size: 0.95em;
+  color: var(--text-dark);
+}
+
+.social-links {
+  margin-bottom: 15px;
+}
+
+.social-links a {
+  margin: 0 15px;
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-size: 1.5em;
+  display: inline-block;
+  padding: 5px;
+  transition: color 0.3s, transform 0.3s;
+}
+
+/* Efect de Hover pe Link-urile Sociale */
+.social-links a:hover {
+  color: var(--primary-color);
+  transform: translateY(-3px) scale(1.1);
+}
+
+.copyright {
+  margin-top: 15px;
+  color: var(--text-dark);
+  font-weight: 400;
+}
