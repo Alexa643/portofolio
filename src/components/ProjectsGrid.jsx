@@ -47,7 +47,7 @@ const ALL_PROJECTS = [
     id: 5,
     title: "Sistem de Autentificare",
     type: "Backend",
-    description: "Implementare OAuth2 cu Node.js.",
+    description: "Implementare Auth2 cu Node.js.",
     tags: ["Passport", "JWT"],
     repo: "#",
     demo: "#",

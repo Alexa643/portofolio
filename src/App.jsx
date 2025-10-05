@@ -2,7 +2,6 @@ import React from "react"
 import Hero from "@/components/Hero.jsx"
 import ProjectsGrid from "@/components/ProjectsGrid.jsx"
 import "./App.css"
-
 const App = () => {
   return (
     <div className="main-content">

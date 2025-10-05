@@ -10,16 +10,13 @@ export default function ProjectModal({ project, onClose }) {
           ✖
         </button>
         <h2>{project.title}</h2>
-        <p>
-          {project.description} Aici ar trebui să adaugi o descriere mult mai
-          lungă și tehnică despre soluțiile folosite, arhitectură și provocări.
-        </p>
+        <p>{project.description} Descriere</p>
 
         <div className="gallery">
           {project.gallery?.map((img, i) => (
             <img
               key={i}
-              src={`https://via.placeholder.com/600x350?text=Galeria+${i + 1}`}
+              src={`img1+${i + 1}`}
               alt={`Imaginea ${i + 1} din proiect`}
               className="gallery-item"
             />
