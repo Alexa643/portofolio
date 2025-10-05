@@ -1,12 +1,36 @@
 .controls {
   display: flex;
-  gap: 10px;
-  margin: 20px 0;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin: 30px 0;
+  padding: 0 20px;
 }
-.controls input,
-.controls select,
+
 .controls button {
-  padding: 8px;
-  border-radius: 6px;
+  padding: 10px 20px;
+  border-radius: 20px;
   border: 1px solid #ccc;
+  background-color: white;
+  color: #555;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.controls button:hover {
+  border-color: #007bff;
+  color: #007bff;
+}
+
+.controls button.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+  box-shadow: 0 2px 5px rgba(0, 123, 255, 0.3);
+}
+
+.controls input,
+.controls select {
+  display: none;
 }
